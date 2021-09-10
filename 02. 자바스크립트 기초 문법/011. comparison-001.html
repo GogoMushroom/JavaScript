@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" ,content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>comparison</title>
+</head>
+<body>
+<script>
+    var a = 10;
+    var b = 20;
+    var c = 10;
+    var d = 10;
+    var f= "20";
+    var result;
+
+
+    /*
+    >,<,=,>=,<=,== 는 숫자와 자료형을 구분하지 않는다.
+    ===, !== 는 표기된 값과 자료값이 같아야 한다.
+    10 과 "10"은 == 연산시 true 이지만 === 연산시 false이다.
+    */
+    result = a>b; //false
+    document.write(result,"<br>");
+    result = a<b; //true
+    document.write(result,"<br>");
+    result = a<c; //false
+    document.write(result,"<br>");ㅜ
+    result = a<=b; //true 
+    document.write(result,"<br>");
+    result = b==f; //true 문자형과 숫자형 비교
+    document.write(result,"<br>");
+    result = a!=b; //true 문자형과 숫자형 비교
+    document.write(result,"<br>");
+    result = b===f; //false 문자형과 숫자형 비교
+    document.write(result,"<br>");
+</script>
+</body>
+</html>
